@@ -1,0 +1,185 @@
+/* General container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Profile section styles */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.profile img.profilePicture {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #007bff;
+}
+
+.profile .username {
+  font-size: 2em;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.profile .bio {
+  font-size: 1.2em;
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+}
+
+.profile button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.profile button:hover {
+  background-color: #0056b3;
+}
+
+/* Counts section styles */
+.counts {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.counts p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.counts button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.counts button:hover {
+  background-color: #0056b3;
+}
+
+/* Followers and Following lists styles */
+.followers, .following {
+  margin-top: 20px;
+}
+
+.followers div, .following div {
+  margin: 5px 0;
+}
+
+.followers .link, .following .link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.followers .link:hover, .following .link:hover {
+  text-decoration: underline;
+}
+
+/* Posts section styles */
+.posts {
+  margin-top: 20px;
+}
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post img.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post .caption {
+  padding: 10px;
+  font-size: 1em;
+  color: #333;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 10px;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+/* File upload button styles */
+.upload-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+.upload-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Label styling for file input */
+.profile-pic-upload label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10 px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.profile-pic-upload label:hover {
+  background-color: #0056b3;
+}
+
+/* Hide the default file input */
+#profile-pic-input {
+  display: none;
+}
+
